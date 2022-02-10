@@ -48,6 +48,9 @@ public class Main {
             else if(symWins(str,"O")&&!symWins(str,"X")){
                 System.out.println("O wins");
                 break;
+            }else if(!symWins(str,"X")&&!symWins(str,"O")&&!isEmpty(str)) {
+                System.out.println("Draw");
+                break;
             }
         }while(isEmpty(str)&&(!symWins(str,"O")&&!symWins(str,"X")));
         /*if(symWins(str,"X")&&!symWins(str,"O"))
